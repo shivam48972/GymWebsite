@@ -1,0 +1,115 @@
+body {
+    font-family: 'Patua One', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+   background: url('images/bg.jpg'); 
+}
+.left{
+    display: inline-block;
+/* border: 2px solid cyan; */
+position: absolute;
+left: 34px;
+top: 20px;
+}
+.left img {
+    height: 40px;
+    width: 110px;
+}
+.left div {
+color: aqua;
+text-align: center;
+}
+.center {
+display: block;
+width: 45%;
+margin: 20px auto;
+/* border: 2px solid cyan; */
+}
+.navbar {
+display: inline-block;
+}
+.navbar li{
+display: inline-block;
+font-size: 20px;
+}
+.navbar li a{
+color: white;
+text-decoration: none;
+padding: 35px 15px;
+}
+.navbar li a:hover, .navbar li a.active{
+text-decoration: underline;
+color: cyan;
+}
+.right {
+position: absolute;
+right: 34px;
+top: 30px;
+display: inline-block;
+ /* border: 2px solid cyan; */
+}
+.btn {
+font-family: 'Patua One', cursive;
+margin: 0px,15px;
+background-color: darkcyan;
+color: white;
+padding: 20px, 15px;
+/*border: 2px solid cyan;*/
+border-radius: 10px;
+font-size: 18px;
+cursor: pointer;
+}
+.btn:hover {
+background-color: darkgoldenrod;
+}
+.container {
+    display: inline-block;
+border: 2px solid white;
+margin: 140px 70pX;
+padding: 35px;
+width: 30%;
+border-radius: 10%;
+}
+.container_add{
+   /* border: 2px solid white; */
+   display: inline-block;
+    padding: 35px;
+    width: 40%;
+    text-align: center;
+    /*border-radius: 10%;*/
+    }
+.form-group input {
+font-size: 20px;
+font-family: 'Patua One', cursive;
+text-align: center;
+display: block;
+width: 70%;
+padding: 2px;
+margin: 20px auto;
+border: 2px solid black;
+border-radius: 15px;
+}
+.container h1 {
+text-align: center;
+}
+.container button {
+display: block;
+width: 40%;
+margin: auto;
+
+}
+/* foter */
+.footer {
+    color: red;
+        display: inline-block;
+    }
+    .footer li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .footer li a{
+        color: white;
+        text-decoration: none;
+        padding: 35px 15px;
+    }

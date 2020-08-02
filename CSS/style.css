@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container .form_container{
+    padding: 40px 50px 40px 50px;
+    background-image: linear-gradient(45deg, #ab2f4e,#aa88ee);
+    border-radius: 10px;
+    box-shadow: 0 0 0 10px 0 rgba(0,0,0,0.5);
+
+}
+.container .form_container .heading h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color:#aa88ee;
+
+}
+container .form_container.input_box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid rgba(255,255 255, 0.24);
+    color: #aa88ee;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 4px 0px 4px 25px;
+    height: 33px;
+    transition: 0.8s all;
+
+}
+container .form_container.input_box textarea{
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid rgba(255,255 255, 0.24);
+    color: #aa88ee;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 4px 0px 4px 25px;
+    height: 33px;
+    transition: 0.8s all;
+}
+container .form_container.input_box input:focus,
+container .form_container.input_box textarea:focus{
+    outline: none;
+    border-color:#aa88ee;
+}
+container .form_container.input_box input,icon{
+    position: absolute;
+    height: 33px;
+    color: #fff;
+
+}
+container .form_container.input_box {
+    position: relative;
+}
+container .form_container.sumbit button{
+    border: none;
+    outline: none;
+    width: 100%;
+    background: #fff;
+    height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gym - Home Page</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/styles.css"> -->
+<style>
+    body {
+        font-family: 'Patua One', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+       background: url('images/bg.jpg'); 
+    }
+    .left{
+        display: inline-block;
+/* border: 2px solid cyan; */
+position: absolute;
+    left: 34px;
+    top: 20px;
+    }
+    .left img {
+        height: 40px;
+        width: 110px;
+    }
+    .left div {
+   color: aqua;
+   text-align: center;
+}
+.center {
+    display: block;
+    width: 45%;
+    margin: 20px auto;
+}
+.navbar li a:hover, .navbar li a.active{
+  text-decoration: underline;
+  color: cyan;
+}
+  /* border: 2px solid cyan; */
+.navbar {
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 35px 15px;
+}
+/* foter */
+.footer {
+color: red;
+    display: inline-block;
+}
+.footer li{
+    display: inline-block;
+    font-size: 15px;
+}
+.footer li a{
+    color: white;
+    text-decoration: none;
+    padding: 35px 15px;
+}
+.right {
+    position: absolute;
+    right: 34px;
+    top: 30px;
+    display: inline-block;
+     /* border: 2px solid cyan; */
+}
+.btn {
+    font-family: 'Patua One', cursive;
+    margin: 0px,15px;
+    background-color: darkcyan;
+    color: white;
+    padding: 20px, 15px;
+   /* border: 2px solid cyan; */
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: darkgoldenrod;
+}
+.container {
+    border: 2px solid white;
+    margin: 71px 100pX;
+    padding: 50px;
+    width: 30%;
+    border-radius: 10%;
+}
+.form-group input {
+    font-size: 20px;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    display: block;
+    width: 70%;
+    padding: 2px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.container h1 {
+    text-align: center;
+}
+.container button {
+    display: block;
+    width: 40%;
+    margin: auto;
+
+}
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/download.png" alt="">
+            <div>Fitness Gym</div>
+        </div>
+        
+       
+        <div class="center">
+        <ul class="navbar">
+            <li><a href = "#" class="active">Home</a></li>
+            <li><a href = "about.html">About Us</a></li>
+            <li><a href = "calculator.html">Fitness Calculator</a></li>
+            <li><a href = "contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+        <div class="right">
+       <button class="btn" > <a href="tel: 8418990518">Call Us +91 - 8418990518</a></button>
+       
+    </div>
+    </header>
+    <div class="container">
+        <marquee><h1 style="color: yellow;"> Special offer - Join Now & Get 30% Discount </h1></marquee>
+        <h1> Join Best Gym of Chennai </h1>
+        <form action="join.php" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="age" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="gender" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="area" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="mobile" placeholder="Enter Your Mobile Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <br><br>
+    <hr>
+        <div class="footer">
+                    <p>© 2020 Fitness Gym Pvt. Ltd. All Rights Reserved.</p>
+                    <ul class="bottom_menu">
+                            <li><a href = "#" class="active">Home</a></li>
+                            <li><a href = "about.html">About Us</a></li>
+                            <li><a href = "calculator.html">Fitness Calculator</a></li>
+                            <li><a href = "contact.html">Contact Us</a></li>
+                            <li><a href="https://www.facebook.com/shivam48972"><img src="images/facebook.png"></a></li>
+                                <li><a href="https://www.twitter.com/shivam48972"><img src="images/twitter.png"></a></li>
+                                <li><a href="https://www.linkedin.com/in/shivam-agnihotri"><img src="images/linkedin.png"></a></li>
+                                <li><a href="https://shivamagnihotri.business.site"><img src="images/global.png"></a></li>
+                    </ul>
+            </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    
+    <script type="text/javascript">
+     function calcSum() {
+         weight = document.getElementsByName("weight")[0].value;
+         hight = document.getElementsByName("hight")[0].value;
+         BMI = Number(weight) / Number(hight*hight);
+        document.getElementsByName("BMI")[0].value = BMI;
+    
+    if(BMI <= 18)
+    {
+        alert("You are UnderWight. Choose Diet plan 1")
+    }
+    else if(BMI >= 18 && BMI <=24 )
+    {
+        alert("You are Regular Fit. You Should Join Gym")
+    }
+    else {
+        alert("You are OverWight. Choose Diet Plan 2")
+    }
+}
+    </script>
+ 
+
+</head>
+<style>
+    body {
+        font-family: 'Patua One', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+       background: url('images/bg.jpg'); 
+    }
+    .container1 {
+        white-space: nowrap;
+        overflow-x: auto;
+    display: inline-block;
+/*border: 2px solid white; */
+margin: 10px 15px;
+padding: 15px;
+padding-bottom: 50px;
+width: 90%;
+border-radius: 10%;
+}
+.container1_add{
+   /* border: 2px solid white; */
+   display: inline-block;
+    padding: 35px;
+    width: 40%;
+    text-align: center;
+    /*border-radius: 10%;*/
+    }
+    .container1 h1 {
+text-align: center;
+}
+.container1 button {
+display: block;
+width: 40%;
+margin: auto;
+
+}
+.diet1 {
+    background-color: lightslategrey;
+    display: inline-block;
+border: 2px solid white;
+margin: 10px 10%;
+padding: 15px;
+padding-bottom: 20px;
+width: 30%;
+border-radius: 10%;
+}
+.diet1_add{
+   /* border: 2px solid white; */
+   display: inline-block;
+    padding: 25px;
+    width: 40%;
+    text-align: center;
+    /*border-radius: 10%;*/
+    }
+    .diet1 h1 {
+text-align: center;
+}
+.diet1 button {
+display: block;
+width: 40%;
+margin: auto;
+
+}
+.diet2 {
+    background-color: lightslategrey;
+    display: inline-block;
+border: 2px solid white;
+margin: 10px 10px;
+padding: 15px;
+padding-bottom: 20px;
+width: 30%;
+border-radius: 10%;
+}
+.diet2_add{
+   /* border: 2px solid white; */
+   display: inline-block;
+    padding: 25px;
+    width: 40%;
+    text-align: center;
+    /*border-radius: 10%;*/
+    }
+    .diet2 h1 {
+text-align: center;
+}
+.diet2 button {
+display: block;
+width: 40%;
+margin: auto;
+
+}::placeholder {
+    color: blue;
+}
+
+    </style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/download.png" alt="">
+            <div>Fitness Gym</div>
+        </div>
+        
+       
+        <div class="center">
+        <ul class="navbar">
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About Us</a></li>
+            <li><a href = "calculator.html" class="active">Fitness Calculator</a></li>
+            <li><a href = "contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+        <div class="right">
+            <button class="btn" > <a href="tel: 8418990518">Call Us +91 - 8418990518</a></button> 
+    </header>
+    <div class="All pack">
+    <div class="container1">
+        <marquee scrollamount ="12"><h1 style="color:#12f70a"> Check fitness factor for Free to get required product </h1></marquee>
+        <h1> Check Your BMI Factor </h1>
+        <div class="form-group">
+            <input type="number" name="weight" placeholder="Enter Your Weight (in Kg.)" required>
+        </div>
+        <div class="form-group">
+            <input type="number" name="hight" placeholder="Enter Your Hight (in m.)" required>
+        </div>
+        <div class="form-group">
+            <input type="number" name="BMI" placeholder=" " disabled style="color: red;">
+        </div>
+        <div>
+        <button class="btn" name="submit" value="submit" onclick="calcSum()" >Calculate Factor </button>
+        </div>
+        <br>
+    <!--
+        <div>
+            Answer = <input type="text" name="calculate" value=""/>
+        </div>
+        --->
+        <div class="diet1">
+            <marquee><h1 style="color:#12f70a"> Choose After Calculating BMI </h1></marquee>
+            <h1> Diet Plan 1 </h1>
+            <div class="form-group">
+                <input type="number" name="diet1" placeholder=" Choose If You Are UnderWight" disabled>
+                <button class="btn" name="buy" onclick="window.location.href='payment.html'">Buy Now </button>
+            </div>
+        </div>
+    
+            
+            <div class="diet2">
+                <marquee><h1 style="color:#12f70a"> Choose After Calculating BMI </h1></marquee>
+                <h1> Diet Plan 2 </h1>
+                <div class="form-group">
+                    <input type="number" name="diet2" placeholder=" Choose If You Are OverWight" disabled >
+                    <button class="btn" name="buy" onclick="window.location.href='payment2.html'">Buy Now </button>
+                </div>
+            </div>
+                </div>
+                
+
+    <hr>
+        <div class="footer">
+                    <p>© 2020 Fitness Gym Pvt. Ltd. All Rights Reserved.</p>
+                    <ul class="bottom_menu">
+                            <li><a href = "index.html">Home</a></li>
+                            <li><a href = "about.html">About Us</a></li>
+                            <li><a href = "calculator.html">Fitness Calculator</a></li>
+                            <li><a href = "contact.html" class="active">Contact Us</a></li>
+                            <li><a href="https://www.facebook.com/shivam48972"><img src="images/facebook.png"></a></li>
+                                <li><a href="https://www.twitter.com/shivam48972"><img src="images/twitter.png"></a></li>
+                                <li><a href="https://www.linkedin.com/in/shivam-agnihotri"><img src="images/linkedin.png"></a></li>
+                                <li><a href="https://shivamagnihotri.business.site"><img src="images/global.png"></a></li>
+                    </ul>
+            </div>
+</body>
+</html>
